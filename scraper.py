@@ -26,7 +26,7 @@ for row in rows:
     cells = row.findChildren('th')
     print()
     for cell in cells:
-        print(cell.string, end=",") # line in question
+        print(cell.string, end=",") 
 
 for row in rows:
     cells = row.findChildren('td')
