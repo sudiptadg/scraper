@@ -22,11 +22,11 @@ table = soup.find(id="datatable3")
 
 rows = table.findChildren(['tr'])
 
-for row in rows:
-    cells = row.findChildren('th')
-    print()
-    for cell in cells:
-        print(cell.string, end=",") 
+row = rows[0]
+cells = row.findChildren('th')
+print()
+for cell in cells:
+    print(cell.string, end=",") 
 
 for row in rows:
     cells = row.findChildren('td')
